@@ -19,19 +19,19 @@ export default function CatalogueView({ grouped, categoryOrder, totalCount }: Pr
       : [selected];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
+    <div className="min-h-screen bg-zinc-950">
+      <header className="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
           <div className="shrink-0">
-            <h1 className="text-lg font-bold text-gray-900 tracking-tight">Product Catalogue</h1>
-            <p className="text-xs text-gray-500 mt-0.5">{totalCount} products</p>
+            <h1 className="text-lg font-bold text-white tracking-tight">Product Catalogue</h1>
+            <p className="text-xs text-zinc-400 mt-0.5">{totalCount} products</p>
           </div>
 
           <div className="relative">
             <select
               value={selected}
               onChange={(e) => setSelected(e.target.value)}
-              className="appearance-none bg-white border border-gray-200 rounded-lg pl-3 pr-8 py-2 text-sm font-medium text-gray-700 cursor-pointer hover:border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200 transition-colors"
+              className="appearance-none bg-zinc-800 border border-zinc-700 rounded-lg pl-3 pr-8 py-2 text-sm font-medium text-zinc-100 cursor-pointer hover:border-zinc-600 focus:outline-none focus:ring-2 focus:ring-zinc-600 transition-colors"
             >
               <option value="All">🗂️ All Categories</option>
               {categoryOrder.map((cat) => (
@@ -43,7 +43,7 @@ export default function CatalogueView({ grouped, categoryOrder, totalCount }: Pr
 
             {/* chevron */}
             <svg
-              className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400"
+              className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-zinc-400"
               xmlns="http://www.w3.org/2000/svg"
               width="14"
               height="14"

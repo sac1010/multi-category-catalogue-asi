@@ -19,12 +19,12 @@ export default async function ItemPage({ params }: Props) {
   const icon = CATEGORY_ICONS[item.category] ?? "";
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
+    <div className="min-h-screen bg-zinc-950">
+      <header className="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-900 transition-colors"
+            className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,9 +46,9 @@ export default async function ItemPage({ params }: Props) {
       </header>
 
       <main className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+        <div className="bg-zinc-900 rounded-2xl border border-zinc-800 overflow-hidden">
           <div className="flex flex-col lg:flex-row">
-            <div className="relative w-full lg:w-1/2 aspect-[4/3] lg:aspect-auto bg-gray-100 shrink-0">
+            <div className="relative w-full lg:w-1/2 aspect-[4/3] lg:aspect-auto bg-zinc-800 shrink-0">
               <Image
                 src={item.image}
                 alt={item.itemname}
@@ -69,20 +69,20 @@ export default async function ItemPage({ params }: Props) {
                 </span>
               </div>
 
-              <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight mb-6">
+              <h1 className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-6">
                 {item.itemname}
               </h1>
 
               <div className={`w-10 h-0.5 ${colors.dot} rounded-full mb-6`} />
 
-              <div className="space-y-0 divide-y divide-gray-100">
+              <div className="space-y-0 divide-y divide-zinc-800">
                 {item.itemprops.map((prop) => (
                   <div
                     key={prop.label}
                     className="flex items-center justify-between py-3 first:pt-0 last:pb-0"
                   >
-                    <span className="text-sm text-gray-500 font-medium">{prop.label}</span>
-                    <span className="text-sm font-semibold text-gray-900 text-right ml-4">
+                    <span className="text-sm text-zinc-400 font-medium">{prop.label}</span>
+                    <span className="text-sm font-semibold text-white text-right ml-4">
                       {prop.value}
                     </span>
                   </div>

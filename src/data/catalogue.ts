@@ -264,26 +264,26 @@ export const CATEGORY_ORDER = ["Cars", "Bikes", "Phones", "Computers"];
 export const CATEGORY_COLORS: Record<string, { border: string; badge: string; text: string; dot: string }> = {
   Cars: {
     border: "border-amber-500",
-    badge: "bg-amber-100 text-amber-700",
-    text: "text-amber-600",
+    badge: "bg-amber-500/20 text-amber-400",
+    text: "text-amber-400",
     dot: "bg-amber-500",
   },
   Bikes: {
     border: "border-rose-500",
-    badge: "bg-rose-100 text-rose-700",
-    text: "text-rose-600",
+    badge: "bg-rose-500/20 text-rose-400",
+    text: "text-rose-400",
     dot: "bg-rose-500",
   },
   Phones: {
     border: "border-sky-500",
-    badge: "bg-sky-100 text-sky-700",
-    text: "text-sky-600",
+    badge: "bg-sky-500/20 text-sky-400",
+    text: "text-sky-400",
     dot: "bg-sky-500",
   },
   Computers: {
     border: "border-violet-500",
-    badge: "bg-violet-100 text-violet-700",
-    text: "text-violet-600",
+    badge: "bg-violet-500/20 text-violet-400",
+    text: "text-violet-400",
     dot: "bg-violet-500",
   },
 };

@@ -14,9 +14,9 @@ export default function ItemCard({ item }: Props) {
   return (
     <Link
       href={`/item/${slug}`}
-      className="group block bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+      className="group block bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 shadow-sm hover:shadow-lg hover:border-zinc-700 hover:-translate-y-0.5 transition-all duration-200"
     >
-      <div className="relative w-full aspect-[4/3] bg-gray-50 overflow-hidden">
+      <div className="relative w-full aspect-[4/3] bg-zinc-800 overflow-hidden">
         <Image
           src={item.image}
           alt={item.itemname}
@@ -27,7 +27,7 @@ export default function ItemCard({ item }: Props) {
         />
       </div>
       <div className="p-3">
-        <h3 className="font-semibold text-gray-900 text-sm leading-tight mb-2 truncate">
+        <h3 className="font-semibold text-white text-sm leading-tight mb-2 truncate">
           {item.itemname}
         </h3>
         {previewProps.length > 0 && (

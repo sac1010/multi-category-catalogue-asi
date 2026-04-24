@@ -14,7 +14,7 @@ export default function CategorySection({ category, items }: Props) {
     <section className={`border-l-4 ${colors.border} pl-5`}>
       <div className="flex items-center gap-3 mb-5">
         <span className="text-2xl" aria-hidden="true">{icon}</span>
-        <h2 className="text-xl font-bold text-gray-900 tracking-tight">{category}</h2>
+        <h2 className="text-xl font-bold text-white tracking-tight">{category}</h2>
         <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${colors.badge}`}>
           {items.length} {items.length === 1 ? "item" : "items"}
         </span>
